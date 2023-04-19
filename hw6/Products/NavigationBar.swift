@@ -24,7 +24,7 @@ struct NavigationBar: View {
                         color: Color(.black),
                         font: .bold)
                 }
-                
+    
                 CustomButton(image: Image("vector"))
                 Spacer()
                 CustomButton(

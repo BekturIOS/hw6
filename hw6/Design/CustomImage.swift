@@ -23,4 +23,3 @@ struct CustomImage: View {
     }
 }
 
-

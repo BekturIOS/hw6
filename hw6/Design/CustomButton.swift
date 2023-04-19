@@ -14,7 +14,7 @@ struct CustomButton: View {
     var width: CGFloat?
     var height: CGFloat?
     
-//    var corner: Float
+    //    var corner: Float
     var body: some View {
         Button {
             //
