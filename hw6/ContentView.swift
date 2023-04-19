@@ -15,7 +15,7 @@ struct ContentView: View {
         Image("car"),
         Image("disc")
     ]
-    
+
     @State var select: Int = 0
     var foodImage: [Image] = [
         
@@ -33,10 +33,13 @@ struct ContentView: View {
     @State var textGreasdf: String = ""
     var tittle: [String] = ["Delivery", "bag", "bell", "cars","disc"]
     var body: some View {
+        NavigationView{
             ZStack {
                 Color("gray1")
                     .ignoresSafeArea(.all)
                 VStack{
+                    
+                   
                     ScrollView(.vertical,showsIndicators: true) {
                         VStack (alignment: .leading, spacing: 20) {
                             NavigationBar()
@@ -83,6 +86,7 @@ struct ContentView: View {
                     Spacer()
                     TabbarViewCell()
                 }
+            }
         }
     }
 }
